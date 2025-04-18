@@ -1,0 +1,115 @@
+/* Original */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-section .background {
+    position: absolute;
+    inset: 0;
+    background: url('../img/2.jpeg') center center / cover no-repeat;
+    z-index: 0;
+  }
+  
+  .hero-section .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-section .content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  /* New Hero Section */
+  .hero-section1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .hero-section1 .background1 {
+    position: absolute;
+    inset: 0;
+    background: url('../img/PhotoDump.jpeg') center center / cover no-repeat;
+    z-index: 0;
+  }
+  
+  .hero-section1 .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .hero-section1 .content {
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+  }
+  
+  
+
+  .navbar.navbar-transparent {
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent */
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.navbar-transparent .nav-link,
+  .navbar.navbar-transparent .navbar-brand,
+  .navbar.navbar-transparent .link-fancy,
+  .navbar.navbar-transparent .navbar-toggler-icon {
+    color: white !important;
+    fill: white;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95); /* Almost solid white */
+    transition: background-color 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+  .navbar.scrolled .nav-link,
+  .navbar.scrolled .navbar-brand,
+  .navbar.scrolled .link-fancy,
+  .navbar.scrolled .navbar-toggler-icon {
+    color: black !important;
+    fill: black;
+  }
+  
+  .custom-red {
+    background-color: #c8102e !important;
+    color: white !important;
+    border: 2px solid #c8102e !important;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-red:hover {
+    background-color: white !important;
+    color: #c8102e !important;
+    border-color: #c8102e !important;
+  }
+  
+  .custom-red-outline {
+    background-color: white !important;
+    color: #c8102e !important;
+    border: 2px solid #c8102e !important;
+    transition: all 0.3s ease !important;
+  }
+  
+  .custom-red-outline:hover {
+    background-color: #c8102e !important;
+    color: white !important;
+  }
+  
+  .gallery-img {
+    height: 50vh;
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+  }
+  
