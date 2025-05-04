@@ -1,0 +1,23 @@
+from PIL import Image, ImageEnhance
+import matplotlib.pyplot as plt
+
+# Load the image
+image_path = "14F Summer Camp 2024.JPG"
+original_image = Image.open(image_path)
+
+# Apply a set of color correction filters
+enhancer_brightness = ImageEnhance.Brightness(original_image)
+enhanced_image = enhancer_brightness.enhance(1.05)  # Slight brightness boost
+
+enhancer_contrast = ImageEnhance.Contrast(enhanced_image)
+enhanced_image = enhancer_contrast.enhance(1.1)  # Mild contrast improvement
+
+enhancer_color = ImageEnhance.Color(enhanced_image)
+enhanced_image = enhancer_color.enhance(1.1)  # Slight color saturation
+
+# Save the enhanced image
+enhanced_image_path = "14F_Summer_Camp_2024_Corrected.JPG"
+enhanced_image.save(enhanced_image_path)
+
+enhanced_image.show()
+
